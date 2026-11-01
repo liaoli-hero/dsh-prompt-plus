@@ -23,3 +23,9 @@ dsh plugin --profile <profile> add github:liaoli-hero/dsh-prompt-plus
 功能行为参考了对 WorkBuddy 的分析；现有提示词文本由项目重新编写。公开仓库不包含从该产品提取的提示词原文或审计参考素材。项目的来源审计仅针对特定文本相似性，不构成全面的权利或独立性保证。
 
 `package.json` 标注 MIT。
+
+## 界面示意
+
+下图为插件图标的渲染测试和输入框布局示意，并非真实使用录屏。
+
+![图标渲染与输入框布局示意](docs/icon-demo.png)
