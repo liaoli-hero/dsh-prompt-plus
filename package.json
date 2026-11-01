@@ -1,0 +1,35 @@
+{
+  "name": "dsh-prompt-plus",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "提示词优化：在输入框工具栏放一个四角星按钮，输入文本后才出现，点一下用当前模型把草稿改写成更清晰、更具体的提示词。",
+  "icon": "./assets/icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

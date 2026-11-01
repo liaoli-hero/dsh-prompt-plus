@@ -1,0 +1,7 @@
+# dsh-prompt-plus bundle patch：把「提示词优化」挂进 profile 树。
+#
+# 只插入一行。配置全部走 index.js 的默认值；需要调就在 profile 的
+# cordis.patch.yml 里用同 id 的条目覆盖（见 README「配置」一节）。
+- insert:
+    - id: dsh-prompt-plus
+      name: 'dsh-prompt-plus'
